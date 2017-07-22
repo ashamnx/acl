@@ -1,0 +1,14 @@
+{
+    "name": "ashamnx/acl",
+    "description": "Laravel Route Based Acl",
+    "type": "laravel, acl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asham Sabir",
+            "email": "ashamnx@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
