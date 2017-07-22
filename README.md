@@ -25,7 +25,7 @@ protected $routeMiddleware = [
 
 ];
 ```
-4.Add the middleware to your `app/Http/Kernel.php`.
+5.Add the middleware to your `app/Http/Kernel.php`.
 
 ```php
 protected $routeMiddleware = [
@@ -34,10 +34,10 @@ protected $routeMiddleware = [
 
 ];
 ```
-5.Make sure all routes that use the middleware are named and the name has the format [prefix].[resource].[action]
+6.Make sure all routes that use the middleware are named and the name has the format [prefix].[resource].[action]
 ````
 Route::middleware(['acl'])->get('test/win', function() {
     return 'Testing win';
 })->name('testing.win');
 ````
-6.Run ``php artisan acl:init`` to create an `Administrator` group and give all access.
+7.Run ``php artisan acl:init`` to create an `Administrator` group and give all access.
