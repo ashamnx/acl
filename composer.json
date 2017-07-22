@@ -1,12 +1,18 @@
 {
     "name": "ashamnx/acl",
     "description": "Laravel Route Based Acl",
-    "type": "laravel, acl",
+    "type": "laravel",
     "license": "MIT",
     "authors": [
         {
             "name": "Asham Sabir",
             "email": "ashamnx@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ashamnx/acl"
         }
     ],
     "minimum-stability": "dev",

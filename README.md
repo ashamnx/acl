@@ -5,7 +5,9 @@ Laravel Route based ACL.
 ## Requirements
 * Laravel 5.4 with Passport
 ## Getting Started
-1.Install
+1.Install via 
+```composer require ashamnx/acl```
+
 2.Add the package to your application service providers in `config/app.php`.
 ```
 'providers' => [
