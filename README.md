@@ -23,13 +23,13 @@ Laravel Route based ACL.
 ```php
 protected $routeMiddleware = [
     ....
-    'ACL' => \Ashamnx\Acl\Middleware\AclMiddleware::class,
+    'acl' => \Ashamnx\Acl\Middleware\AclMiddleware::class,
 
 ];
 ```
 5.Make sure all routes that use the middleware are named and the name has the format [prefix].[resource].[action]
 ````
-Route::middleware(['ACL'])->get('test/win', function() {
+Route::middleware(['acl'])->get('test/win', function() {
     return 'Testing win';
 })->name('testing.win');
 ````
