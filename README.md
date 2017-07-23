@@ -23,23 +23,14 @@ Laravel Route based ACL.
 ```php
 protected $routeMiddleware = [
     ....
-    'acl' => \Ashamnx\Acl\Middleware\AclMiddleware::class,
+    'ACL' => \Ashamnx\Acl\Middleware\AclMiddleware::class,
 
 ];
 ```
-5.Add the middleware to your `app/Http/Kernel.php`.
-
-```php
-protected $routeMiddleware = [
-    ....
-    'acl' => 'Ashamnx\Acl\Middleware\AclMiddleware',
-
-];
-```
-6.Make sure all routes that use the middleware are named and the name has the format [prefix].[resource].[action]
+5.Make sure all routes that use the middleware are named and the name has the format [prefix].[resource].[action]
 ````
-Route::middleware(['acl'])->get('test/win', function() {
+Route::middleware(['ACL'])->get('test/win', function() {
     return 'Testing win';
 })->name('testing.win');
 ````
-7.Run ``php artisan acl:init`` to create an `Administrator` group and give all access.
+6.Run ``php artisan acl:init`` to create an `Administrator` group and give all access.
