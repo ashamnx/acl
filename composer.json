@@ -9,6 +9,11 @@
             "email": "ashamnx@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Ashamnx\\Acl\\": "src/"
+        }
+    },
     "repositories": [
         {
             "type": "vcs",
