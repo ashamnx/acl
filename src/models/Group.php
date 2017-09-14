@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Config;
 class Group extends Model
 {
     protected $fillable = ['oauth_clients_id', 'parent_id', 'name'];
-     protected $hidden = ['oauth_clients_id'];
+    protected $hidden = ['oauth_clients_id'];
     protected $morphClass = 'Group';
 
     public function children()

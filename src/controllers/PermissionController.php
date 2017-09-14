@@ -46,7 +46,7 @@ class PermissionController extends AclController
     public function index(Request $request)
     {
         $limit = Input::has('limit') ? Input::get('limit') : self::PER_PAGE;
-        $resource = Permission::with('groups')->paginate($request->get('limit'));
+        $resource = Permission::with(['groups', 'action', 'resource'])->get();
         return Response::json(['message' => 'Permission loaded.', 'data' => $resource], Status::HTTP_OK);
     }
 
