@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Ashamnx\\Acl\\": "src/"
+            "Ashamnx\\Acl\\": "src"
         }
     },
     "repositories": [
