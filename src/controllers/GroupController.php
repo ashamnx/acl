@@ -176,7 +176,7 @@ class GroupController extends AclController
         $validator = \Validator::make(Input::all(), $rules);
         if ($validator->passes()) {
             $ug = UserGroup::where('user_id', Input::get('user_id'))->where('group_id', Input::get('group_id'))->first();
-            if ($ug && Input::get('selection') == false) {
+            if ($ug) {
                 $ug->delete();
                 return $ug;
             } else {

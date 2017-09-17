@@ -28,7 +28,7 @@ class PermissibleController extends AclController
             $Permissible = new Permissible();
             $Permissible->permission_id = $request->get('id');
             $Permissible->permissible_id = $request->get('permissibile_id');
-            $Permissible->permissible_type = 'Group';
+            $Permissible->permissible_type = 'Ashamnx\Acl\Group';
             $Permissible->save();
         }
 

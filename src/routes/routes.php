@@ -4,7 +4,7 @@ namespace Ashamnx\Acl;
 
 use Illuminate\Support\Facades\Route;
 
-Route::middleware(['auth:api', 'acl'])->as('api.')->prefix('api')->group(function () {
+Route::middleware(['api','auth:api', 'acl'])->as('api.')->prefix('api')->group(function () {
     Route::get('test', function () {
         return 'Test';
     });
